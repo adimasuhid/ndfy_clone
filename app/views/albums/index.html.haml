@@ -1,5 +1,6 @@
-%h2 Album Name | Description
--@albums.each do |f|
-  %strong= f.name
-  %strong= f.desc
-  %br
+.center
+  %h2 Album Name | Description
+  -@albums.each do |f|
+    %strong= f.name
+    %strong= f.desc
+    %br

@@ -4,4 +4,7 @@
     %strong= f.name
     %strong= f.desc
     = link_to "View Albums", artist_path(f)
+    = link_to "Edit Artist", edit_artist_path(f)
+    = link_to "Delete Artists", artist_path(f), method: 'delete'
     %br
+  = link_to "Add New Artist", new_artist_path
