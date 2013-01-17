@@ -1,0 +1,11 @@
+%h2 Artist Name | Description
+= @artist.name
+= @artist.desc
+%br
+%h2= "#{@artist.name} Albums"
+-@albums.each do |f|
+  %strong= f.name
+  %strong= f.desc
+  %strong= f.id
+  = link_to "View Album", artist_album_path(@artist, f.id)
+  %br
