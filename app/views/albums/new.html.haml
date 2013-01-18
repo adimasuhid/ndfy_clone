@@ -1,0 +1,8 @@
+.center
+  = form_for [@artist, @album] do |f|
+    = f.label :name
+    = f.text_field :name
+    = f.label :desc
+    = f.text_field :desc
+    %br
+    = f.submit "Save", class: 'btn btn-primary'

@@ -7,5 +7,6 @@
   %strong= f.name
   %strong= f.desc
   %strong= f.id
-  = link_to "View Album", artist_album_path(@artist, f.id)
+  = link_to "View Album", artist_album_path(@artist, f)
   %br
+= link_to "Add an Album", new_artist_album_path(@artist)
